@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Credit</title>
+    <bookmarks>
+        <bookmark name="credit" href="#credit">
+        </bookmark>
+    </bookmarks>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <style>
+</style>
+</head>
+
+<body>
+    <h1 align="center">YOUR CREDIT SMULATION</h1>
+     <div>
+     <table> 
+     <tr>
+       <td> <h3>Amount of the credit:</h3> </td>
+       <td> <p  th:text="${credit?.amount}"> </p> </td>
+       </tr>
+       <tr> 
+       <td> <h3>Repayment period:</h3> </td>
+       <td> <p  th:text="${credit?.period}"> </p> </td>
+       </tr>
+       <tr>
+       <td> <h3>Periodicity:</h3> </td> 
+       <td> <p  th:text="${credit?.periodicity}"> </p> </td>
+       </tr>
+       <tr>
+       <td> <h3>Number of installment:</h3> </td>
+        <td> <p  th:text="${credit?.installment}"> </p> </td>
+        </tr>
+        <tr>
+       <td> <h3>Amount of an installment:</h3> </td>
+        <td> <p  th:text="${credit?.amountinstallment}"> </p> </td>
+        </tr>
+        <tr>
+        <td> <h3>Interest of the credit</h3> </td>
+        <td> <p  th:text="${credit?.interest}"> </p> </td>
+        </tr>
+        <tr>
+       <td> <h3>Bank name:</h3> </td>
+       <td> <p  th:text="${credit?.bankname}"> </p> </td>
+       </tr>
+       </table> 
+    </div>
+
+</body>
+</html>
